@@ -16,8 +16,7 @@ function createToken(payload, secret) {
  * Documentation: https://www.npmjs.com/package/jsonwebtoken#token-expiration-exp-claim
  */
 function createTokenWithExpiry(payload, secret, exp) {
-    const token = jwt.sign(payload, secret, { expiresIn: exp });
-    return token;
+    return token = jwt.sign(payload, secret, { expiresIn: exp });
 }
 
 /**
